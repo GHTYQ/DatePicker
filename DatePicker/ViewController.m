@@ -24,7 +24,7 @@
     __weak typeof (self) weakSelf = self;
     if (!self.datePickerV) {
         self.datePickerV=[DatePickerView returnDatePickerView];
-        self.datePickerV.dateType=2;
+        self.datePickerV.dateType=1;
         self.datePickerV.sureBlcok = ^(NSString *dateStr) {
             [weakSelf.dateBtn setTitle:dateStr forState:UIControlStateNormal];
         };
